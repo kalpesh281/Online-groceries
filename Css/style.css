@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Nunito:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
+:root{
+    --orange:#ff7800;
+    --black:#130f40;
+    --light-color:#666;
+    --box-shadow:0 .5rem rgba(0, 0,0,.1);
+    --border:0 .5rem rgba(0, 0,0,.1);
+    --outline:0 .5rem rgba(0, 0,0,.1);
+    --outline-hover:.2rem solid var(--black)
+
+}
+
+
+
+
+*{
+    font-family: 'Baloo Bhai 2', cursive;
+font-family: 'Nunito', sans-serif;
+margin: 0;padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+text-transform: capitalize;
+transition:all .2s linear;
+}
+
+
+
+
+html{
+    font-size:63%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    background-color: white
+}
+
+.header{
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 2rem 9%;
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+}
+
+
+.header .logo{
+    font-size: 2.5rem;
+    color: var(--black);
+    font-weight:bolder;
+}
+
+.header .logo i{
+    color: var(--black);
+}
+
+
+.header .navbar a{
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: var(--black)
+}
+
+.header .navbar a:hover{
+    color: var(--orange);
+}
+
+
+.header .icons div{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background-color:#fff;
+    color: var(--black);
+    font-size:2rem;
+    margin-left: .3rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.header .icons div:hover{
+    background-color: var(--orange);
+    color: #fff;
+}
+
+
+#menu-btn{
+    display: none;
+}
+
+.header .form-search{
+    position: absolute;
+    top: 110%; right:-110%;
+    width: 50rem;
+    height: 5rem;
+    overflow: hidden;
+    display: flex;
+    border-radius: .5rem;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    margin-top: 15px;
+}
+
+
+.header .form-search input{
+    height: 100%;
+    width: 100%;
+    text-transform: none;
+    color: var(--black);
+    background: none;
+    font-size:1.6rem;
+    padding: 0 1.5rem;   
+}
+
+.header .form-search label{
+    padding-right: 1.4rem;
+    cursor: pointer;
+    color: var(--black);
+    font-size: 2.6rem;
+
+}
+
+.header .form-search label:hover{
+    color: var(--orange);
+}
+
