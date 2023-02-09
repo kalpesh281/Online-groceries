@@ -129,7 +129,7 @@ body{
 
 .header .form-search.active{
     right: 2rem;
-    transition: .4s linear;
+    transition: .6s linear;
 }
 
 .header .form-search input{
@@ -168,7 +168,7 @@ body{
 
 .header .shopping-cart.active{
     right: 2rem;
-    transition: .4s linear;   
+    transition: .6s linear;   
 }
 
 .header .shopping-cart .box{
