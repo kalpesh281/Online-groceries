@@ -38,6 +38,22 @@ body{
     background-color: white
 }
 
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--black);
+    cursor: pointer;
+    color: var(--black);
+}
+
+.btn:hover{
+    background-color:var(--orange);
+    color: #fff;
+}
+
 .header{
     position: fixed;
     top: 0;left: 0;right: 0;
@@ -111,6 +127,11 @@ body{
 }
 
 
+.header .form-search.active{
+    right: 2rem;
+    transition: .4s linear;
+}
+
 .header .form-search input{
     height: 100%;
     width: 100%;
@@ -131,5 +152,71 @@ body{
 
 .header .form-search label:hover{
     color: var(--orange);
+}
+
+
+.header .shopping-cart{
+    position: absolute;
+    right: -110%;
+    top: 110%;
+    border-radius: .5rem;
+    padding: 1rem;
+    box-shadow:var(--box-shadow);
+    width: 30rem;
+    background: #fff;
+}
+
+.header .shopping-cart.active{
+    right: 2rem;
+    transition: .4s linear;   
+}
+
+.header .shopping-cart .box{
+    position: relative;
+    gap: 2rem;
+    display: flex;
+    margin: 3rem 0;
+}
+
+.header .shopping-cart .box .fa-trash{
+    position: absolute;
+    font-size: 1.8rem;
+    color: var(--light-color);
+    cursor: pointer;
+    top: 50%; right: 2rem;
+    transform: translateY(-50%);
+}
+
+.header .shopping-cart .box .fa-trash:hover{
+    color: var(--orange);
+}
+
+.header .shopping-cart .box .content h3{
+    color:var(--black);
+    font-size: 1.8rem;
+    padding-bottom: .5rem;
+}
+
+.header .shopping-cart .box .content span{
+    color: var(--light-color);
+    font-size: 1.2rem;
+}
+
+.header .shopping-cart .box .content .quantity{
+    padding-left: 1rem;
+}
+
+.header .shopping-cart .total{
+    font-size: 2rem;
+    text-align: center;
+    padding:1rem 0;
+    color: var(--black);
+    font-weight: 600;
+}
+
+.header .shopping-cart .btn{
+    display:block;
+    text-align:center;
+    margin: 1rem;
 }
 
